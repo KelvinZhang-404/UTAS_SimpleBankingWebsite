@@ -1,0 +1,89 @@
+/*define the font and background color for whole body*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FDF6E4;
+}
+/*define the navigation bar*/
+.navbar {
+  overflow: hidden;
+  background-color: #FFD3A8;
+  padding: 10px;
+}
+
+.navbar .logo {
+	padding: 0 20px 0 20px;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: #2F1904;
+	text-align: center;
+	padding: 14px 5px;
+	text-decoration: none;
+}
+
+.navbar a.icon {
+	display: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #FAE9BD;
+}
+
+/*mobile responsive for screen size under 600px */
+@media screen and ( max-width : 600px ){
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and ( max-width : 600px ){
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+/*define the footer style*/
+.footer-container {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+.footer-container ul#footer-list {
+	padding: 0px;
+}
+
+.footer-container ul#footer-list li{
+	display: inline;
+	padding-right: 20px;
+}
+
+.footer-container ul#footer-list li a {
+	text-decoration: none;
+	color: #2F1904;
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+.footer-container ul#footer-list li a:hover {
+	opacity: 1;
+}
+
+.footer-container footer {
+	background-color: #FFD3A8;
+	text-align: center;
+	padding: 10px;
+}

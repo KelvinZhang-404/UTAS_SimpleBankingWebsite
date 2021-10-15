@@ -1,0 +1,44 @@
+<template>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+        function logoutAlert() {
+            var today = new Date();
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date+' '+time;
+            alert("Logout time: " + dateTime);
+        }
+    </script>
+    <div class="navbar" id="topnav">
+        <a href="index.php">
+            <img class="logo" src="images/bank_bk_16px.png" alt="Logo">
+        </a>
+        <!--<a href="./business_account.php"><b>Business Account</b></a>-->
+        <!--<a href="./savings_account.php"><b>Savings Account</b></a >-->
+        <a href="./estatement.php"><b>eStatements</b></a>
+        <a href="./make_payment.php"><b>Transfer & Pay</b></a>
+        <a href="./information.php"><b>Information</b></a>
+        <form method="get">
+            <input class="logout" type="submit" name="logout" value="Logout" onclick="logoutAlert()">
+        </form>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu_16px.png" alt="none"></a>
+
+    </div>
+    <div class="footer-container">
+        <h3>About us</h3>
+        <ul id="footer-list">
+            <li><a href="#">About Secure Bank</a></li>
+            <li><a href="#">Find us on map</a></li>
+            <li><a href="#">Download mobile app</a></li>
+        </ul>
+        <footer>Lianxue Zhang 516785</footer>
+    </div>
+</template>

@@ -1,0 +1,31 @@
+<template>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("topnav");
+		  if (x.className === "navbar") {
+			x.className += " responsive";
+		  } else {
+			x.className = "navbar";
+		  }
+		}
+	</script>
+    <div class="navbar" id="topnav">
+        <a href="index.php">
+            <img class="logo" src="images/bank_bk_16px.png" alt="Logo">
+        </a>
+
+        <a href="index.php"><b>SECURE BANK</b></a>
+
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu_16px.png" alt="none"></a>
+		
+	</div>
+	<div class="footer-container">
+		<h3>About us</h3>
+		<ul id="footer-list">
+			<li><a href="#">About Secure Bank</a></li>
+			<li><a href="#">Find us on map</a></li>
+			<li><a href="#">Download mobile app</a></li>
+		</ul>
+		<footer>Lianxue Zhang 516785</footer>
+	</div>
+</template>

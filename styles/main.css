@@ -1,0 +1,144 @@
+/*define the main div and child divs*/
+div {
+	/*border: 1px solid black;*/
+	font-family: Arial, Helvetica, sans-serif;
+/*	position: relative;*/
+}
+
+div#container {
+	position: relative;
+	height: 100%;
+	min-height: 100%;
+}
+
+.infoDiv, .formDiv {
+/*	border: 1px solid black;*/
+	margin-top: 30px;
+	text-align: center;
+	/*padding: 10px;*/
+	padding-bottom: 10px;
+}
+
+.infoDiv {
+	float: left;
+	display: inline-block;
+/*	width: auto;*/
+/*	margin-left: 40px;*/
+	
+}
+
+.formDiv {
+	/*border: none;*/
+	background-color: #FAE9BD;
+	float: left;
+	display: inline-block;
+	width: 44%;
+	max-width: 400px;
+}
+
+.formDiv h3 {
+	/*position: relative;*/
+	/*width: 100%;*/
+	background-color: #FFD3A8;
+	margin-top: 0px;
+	/*margin-right: 50px;*/
+	padding: 10px;
+}
+
+/*define the form*/
+form input {
+	width: 216px;
+	padding: 10px;
+}
+
+input[type="submit"] {
+	background-color: #FF8811;
+	width: 240px;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.5s;
+	cursor: pointer;
+	background-image: url('../images/lock.png') no-repeat;
+	background-position: left;
+	background-size: 30px;
+}
+
+input[type="submit"]:hover {
+	opacity: 1;
+}
+
+.formDiv select {
+	width: 240px;
+	height: 40px;
+	overflow: hidden;
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	padding: 20px;
+	background-color: #FF8811;
+	margin-bottom: 20px;
+}
+
+/*select#access_selector {*/
+	/*width: 240px;*/
+	/*height: 40px;*/
+	/*overflow: hidden;*/
+	/*background: transparent;*/
+	/*border: none;*/
+	/*font-size: 14px;*/
+	/*padding: 20px;*/
+	/*background-color: #FF8811;*/
+	/*margin-bottom: 20px;*/
+/*}*/
+
+option[value=""][disabled] {
+	color: gray;
+}
+
+option[disabled] {
+/*	color: gray;*/
+/*	display: none;*/
+}
+
+.formDiv a {
+	font-size: 14px;
+	color: #FF8811;
+}
+
+.formDiv a:hover {
+	color: #D1700E;
+}
+
+/*.infoDiv table {*/
+	/*border: 1px solid black;*/
+/*}*/
+input.logout {
+	float: right;
+	background-color: #FF8811;
+	border: none;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 100px;
+}
+
+/*responsive when horizontal screen size less than or equal to 600px*/
+@media screen and ( max-width : 600px ){
+	.formDiv {
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		display: block;
+	}
+	.infoDiv {
+		float: none;
+		display: block;
+		margin-top: 20px;
+	}
+}
