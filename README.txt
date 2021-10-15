@@ -42,7 +42,7 @@ This is the offical website of Secure Bank Pty. Ltd. Client number is provided o
 
 ### Compatibility
 
-This project contains 3 template files 'template.html', 'user_template.html', 'manager_template.html', which is not supported by Safari and Firefox, but it works perfectly on Chrome 'Version 72.0.3626.121 (Official Build) (64-bit)'.
+This project contains 3 template files 'template.html', 'user_template.html', 'manager_template.html', which is not supported by Safari and Firefox, but it works perfectly on Chrome 'Version 72.0.3626.121 (Official Build) (64-bit)' (At the time of creation, May 2019).
 
 ### Functionality
 
