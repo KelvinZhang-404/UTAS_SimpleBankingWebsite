@@ -1,4 +1,5 @@
-# # UTAS_SimpleBankingWebsite
+# UTAS_SimpleBankingWebsite
+
 ## INTRODUCTION
 
 Your prototype is implemented with the clients feedback. Now we need to make it fully functional. A general member may have one or two accounts: general savings and business accounts. Although transactions for both could be the same, the only difference is the limit on daily transactions in amount. Manager has a different access level to manage everyone’s accounts and their requests of creating accounts or ordering credit card, etc. can be granted.
@@ -10,8 +11,14 @@ All pages of the website contains the following sections:
     Header section of each page contains the title of the page, e.g. Savings Account, Business Account, or Manager Area.
     Main content per page based on your design.
     Navigation with its own design.
-    When login is successfully: welcome text message (Not pup-up nor alert) with an account name (e.g. Welcome William) with the relevant contents. Last access time is displayed. a. Member of bank i. Account details ii. Optionally two different accounts b. Manager i. Account management table is displayed. ii. ID (auto generated), Username, Name, DoB, Email, Account type, and Access
-        Access column displays two options as drop down list, i.e. bank account holder, or manager so that the manager can change another person’s access level.
+    When login is successfully: welcome text message (Not pup-up nor alert) with an account name (e.g. Welcome William) with the relevant contents. Last access time is displayed. 
+    a. Member of bank 
+        i. Account details 
+        ii. Optionally two different accounts 
+    b. Manager 
+        i. Account management table is displayed. 
+        ii. ID (auto generated), Username, Name, DoB, Email, Account type, and Access
+    Access column displays two options as drop down list, i.e. bank account holder, or manager so that the manager can change another person’s access level.
     Logout button: short message with the logout time
     Footer section: your username and student number
 
