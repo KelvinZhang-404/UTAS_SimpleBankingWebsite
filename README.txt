@@ -1,4 +1,4 @@
-# UTAS_SimpleBankingWebsite
+# # UTAS_SimpleBankingWebsite
 ## INTRODUCTION
 
 Your prototype is implemented with the clients feedback. Now we need to make it fully functional. A general member may have one or two accounts: general savings and business accounts. Although transactions for both could be the same, the only difference is the limit on daily transactions in amount. Manager has a different access level to manage everyone’s accounts and their requests of creating accounts or ordering credit card, etc. can be granted.
